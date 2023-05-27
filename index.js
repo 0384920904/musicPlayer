@@ -224,7 +224,8 @@ const app = {
                     _this.currentIndex=Number(songElement.dataset.index);
                     _this.loadCurrentSong();
                     audio.play();
-                    _this.activeSong()
+                    _this.activeSong();
+                    cdThumbAnimate.cancel();
                 }
             }
         }
