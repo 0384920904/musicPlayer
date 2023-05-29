@@ -281,11 +281,11 @@ const app = {
 
     start: function () {
         //định nghĩa các thuộc tính cho object
-        this.handleEvent();
-
-        //Lắng nghe / xử lí các sự kiện (DOM events)
         this.defineProperties();
 
+        //Lắng nghe / xử lí các sự kiện (DOM events)
+        this.handleEvent();
+        
         //Tải thông tin bài hát đầu tiên vào UI khi chạy ứng dụng
         this.loadCurrentSong();
 
